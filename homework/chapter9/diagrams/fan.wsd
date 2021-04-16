@@ -1,0 +1,22 @@
+@startuml fan
+skinparam ClassAttributeIconSize 0
+class Fan {
+  -speed:int
+  -on:boolean
+  -radius:double
+  -color:String
+  {static}SLOW:int
+  {static}MEDIUM:int
+  {static}FAST:int
+  Fan()
+  toString():String
+  +setSpeed(int)
+  +getSpeed():int
+  +setOn(boolean)
+  +getOn():boolean
+  +setRadius(double r)
+  +getRadius():double
+  +setColor(String c)
+  +getColor():String
+}
+@enduml
