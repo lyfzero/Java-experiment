@@ -1,0 +1,3176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="51" passed="40" failed="11" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-20T12:35:50Z" name="All Test Suite" finished-at="2021-04-20T12:35:50Z" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- All Test Suite -->
+  <suite started-at="2021-04-20T12:35:50Z" name="All Test Suite (0)" finished-at="2021-04-20T12:35:50Z" duration-ms="293">
+    <groups>
+    </groups>
+    <test started-at="2021-04-20T12:35:50Z" name="D:/IdeaWorkspace/TestNGDemo/test/homework/ch11_13/PersonTest.java" finished-at="2021-04-20T12:35:50Z" duration-ms="33">
+      <class name="homework.ch11_13.PersonTest">
+        <test-method signature="testGetName()[pri:0, instance:homework.ch11_13.PersonTest@1f554b06]" started-at="2021-04-20T12:35:50Z" name="testGetName" finished-at="2021-04-20T12:35:50Z" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetName -->
+        <test-method signature="testSetAge()[pri:0, instance:homework.ch11_13.PersonTest@1f554b06]" started-at="2021-04-20T12:35:50Z" name="testSetAge" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetAge -->
+        <test-method signature="testTestToString()[pri:0, instance:homework.ch11_13.PersonTest@1f554b06]" started-at="2021-04-20T12:35:50Z" name="testTestToString" finished-at="2021-04-20T12:35:50Z" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestToString -->
+        <test-method signature="testSetName()[pri:0, instance:homework.ch11_13.PersonTest@1f554b06]" started-at="2021-04-20T12:35:50Z" name="testSetName" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetName -->
+        <test-method signature="testGetAge()[pri:0, instance:homework.ch11_13.PersonTest@1f554b06]" started-at="2021-04-20T12:35:50Z" name="testGetAge" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAge -->
+        <test-method signature="testTestEquals()[pri:0, instance:homework.ch11_13.PersonTest@1f554b06]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestClone()[pri:0, instance:homework.ch11_13.PersonTest@1f554b06]" started-at="2021-04-20T12:35:50Z" name="testTestClone" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at homework.ch11_13.PersonTest.testTestClone(PersonTest.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestClone -->
+      </class> <!-- homework.ch11_13.PersonTest -->
+    </test> <!-- D:/IdeaWorkspace/TestNGDemo/test/homework/ch11_13/PersonTest.java -->
+    <test started-at="2021-04-20T12:35:50Z" name="D:/IdeaWorkspace/TestNGDemo/test/homework/ch11_13/StudentTest.java" finished-at="2021-04-20T12:35:50Z" duration-ms="24">
+      <class name="homework.ch11_13.StudentTest">
+        <test-method signature="testGetStudentId(homework.ch11_13.p3.Student, int)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testGetStudentId" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: aaa, age: 20, studentId: 20170101, department: CS, classNo: CS1704]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20170101]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStudentId -->
+        <test-method signature="testSetStudentId(homework.ch11_13.p3.Student, int)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testSetStudentId" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: , age: 0, studentId: 0, department: null, classNo: null]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20170102]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetStudentId -->
+        <test-method signature="testGetDepartment(homework.ch11_13.p3.Student, java.lang.String)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testGetDepartment" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: aaa, age: 20, studentId: 20170101, department: CS, classNo: CS1704]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDepartment -->
+        <test-method signature="testGetClassNo(homework.ch11_13.p3.Student, java.lang.String)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testGetClassNo" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: aaa, age: 20, studentId: 20170101, department: CS, classNo: CS1704]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CS1704]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetClassNo -->
+        <test-method signature="testSetDepartment(homework.ch11_13.p3.Student, java.lang.String)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testSetDepartment" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: , age: 0, studentId: 0, department: null, classNo: null]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetDepartment -->
+        <test-method signature="testSetClassNo(homework.ch11_13.p3.Student, java.lang.String)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testSetClassNo" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: , age: 0, studentId: 0, department: null, classNo: null]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CS1704]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetClassNo -->
+        <test-method signature="testTestToString(homework.ch11_13.p3.Student, [Ljava.lang.Object;)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testTestToString" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: aaa, age: 20, studentId: 20170101, department: CS, classNo: CS1704]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@62bd765]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestToString -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Student;, boolean)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Student;@3c0a50da]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Student;, boolean)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Student;@797badd3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Student;, boolean)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Student;@646be2c3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Student;, boolean)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Student;@77be656f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Student;, boolean)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Student;@19dc67c2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestClone(homework.ch11_13.p3.Student, java.lang.Object)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testTestClone" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: aaa, age: 20, studentId: 20170101, department: CS, classNo: CS1704]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at homework.ch11_13.StudentTest.testTestClone(StudentTest.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestClone -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Student;, boolean)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Student;@473b46c3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at homework.ch11_13.p3.Student.equals(Student.java:55)
+at homework.ch11_13.StudentTest.testTestEquals(StudentTest.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Student;, boolean)[pri:0, instance:homework.ch11_13.StudentTest@458c1321]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="studentDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Student;@221af3c0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+      </class> <!-- homework.ch11_13.StudentTest -->
+    </test> <!-- D:/IdeaWorkspace/TestNGDemo/test/homework/ch11_13/StudentTest.java -->
+    <test started-at="2021-04-20T12:35:50Z" name="D:/IdeaWorkspace/TestNGDemo/test/homework/ch11_13/FacultyTest.java" finished-at="2021-04-20T12:35:50Z" duration-ms="19">
+      <class name="homework.ch11_13.FacultyTest">
+        <test-method signature="testGetFacultyId(homework.ch11_13.p3.Faculty, int)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testGetFacultyId" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="6" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: aaa, age: 20, facultyId: 1998000111, title: Professor, email: abc@qq.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1998000111]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.StackOverflowError">
+            <full-stacktrace>
+              <![CDATA[java.lang.StackOverflowError
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StackOverflowError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetFacultyId -->
+        <test-method signature="testSetFacultyId(homework.ch11_13.p3.Faculty, int)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testSetFacultyId" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="6" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: , age: 0, facultyId: 0, title: , email: ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1998000112]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.StackOverflowError">
+            <full-stacktrace>
+              <![CDATA[java.lang.StackOverflowError
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+at homework.ch11_13.p3.Faculty.getFacultyId(Faculty.java:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StackOverflowError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetFacultyId -->
+        <test-method signature="testSetTitle(homework.ch11_13.p3.Faculty, java.lang.String)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testSetTitle" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: , age: 0, facultyId: 0, title: , email: ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lecturer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetTitle -->
+        <test-method signature="testGetTitle(homework.ch11_13.p3.Faculty, java.lang.String)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testGetTitle" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: aaa, age: 20, facultyId: 1998000111, title: Professor, email: abc@qq.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Professor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTitle -->
+        <test-method signature="testGetEmail(homework.ch11_13.p3.Faculty, java.lang.String)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testGetEmail" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: aaa, age: 20, facultyId: 1998000111, title: Professor, email: abc@qq.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@qq.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetEmail -->
+        <test-method signature="testTestToString(homework.ch11_13.p3.Faculty, [Ljava.lang.Object;)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testTestToString" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: aaa, age: 20, facultyId: 1998000111, title: Professor, email: abc@qq.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4d49af10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestToString -->
+        <test-method signature="testSetEmail(homework.ch11_13.p3.Faculty, java.lang.String)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testSetEmail" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: , age: 0, facultyId: 0, title: , email: ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123@qq.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetEmail -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Faculty;, boolean)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Faculty;@4d339552]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Faculty;, boolean)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Faculty;@5a4aa2f2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Faculty;, boolean)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Faculty;@f0f2775]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Faculty;, boolean)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Faculty;@6591f517]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestClone(homework.ch11_13.p3.Faculty, java.lang.Object)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testTestClone" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name: aaa, age: 20, facultyId: 1998000111, title: Professor, email: abc@qq.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at homework.ch11_13.FacultyTest.testTestClone(FacultyTest.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestClone -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Faculty;, boolean)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Faculty;@69b794e2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at homework.ch11_13.p3.Faculty.equals(Faculty.java:57)
+at homework.ch11_13.FacultyTest.testTestEquals(FacultyTest.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Faculty;, boolean)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Faculty;@429bd883]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Faculty;, boolean)[pri:0, instance:homework.ch11_13.FacultyTest@17d677df]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="facultyDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Faculty;@345965f2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+      </class> <!-- homework.ch11_13.FacultyTest -->
+    </test> <!-- D:/IdeaWorkspace/TestNGDemo/test/homework/ch11_13/FacultyTest.java -->
+    <test started-at="2021-04-20T12:35:50Z" name="D:/IdeaWorkspace/TestNGDemo/test/homework/ch11_13/CourseTest.java" finished-at="2021-04-20T12:35:50Z" duration-ms="10">
+      <class name="homework.ch11_13.CourseTest">
+        <test-method signature="testGetCourseName(homework.ch11_13.p3.Course, java.lang.String)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testGetCourseName" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Course Name: Java Language Programming
+Teacher Info: name: James Gosling, age: 65, facultyId: 0, title: Professor, email: http://nighthacks.com/jag/bio/index.html
+Student List:
+Totally: 0 students.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Java Language Programming]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCourseName -->
+        <test-method signature="testRegister(homework.ch11_13.p3.Course, [Lhomework.ch11_13.p3.Person;)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testRegister" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Course Name: Java Language Programming
+Teacher Info: name: James Gosling, age: 65, facultyId: 0, title: Professor, email: http://nighthacks.com/jag/bio/index.html
+Student List:
+Totally: 0 students.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Person;@7bb58ca3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.util.List homework.ch11_13.p3.Course.getStudents()']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.util.List homework.ch11_13.p3.Course.getStudents()'
+at homework.ch11_13.CourseTest.testRegister(CourseTest.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testGetStudents(homework.ch11_13.p3.Course, [Lhomework.ch11_13.p3.Person;)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testGetStudents" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Course Name: Java Language Programming
+Teacher Info: name: James Gosling, age: 65, facultyId: 0, title: Professor, email: http://nighthacks.com/jag/bio/index.html
+Student List:
+name: aaa, age: 20, studentId: 20170101, department: CS, classNo: CS1704
+name: bbb, age: 20, studentId: 20170102, department: CS, classNo: CS1705
+name: ccc, age: 20, studentId: 20170103, department: CS, classNo: CS1706
+Totally: 3 students.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Person;@29ba4338]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.util.List homework.ch11_13.p3.Course.getStudents()']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.util.List homework.ch11_13.p3.Course.getStudents()'
+at homework.ch11_13.CourseTest.testGetStudents(CourseTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStudents -->
+        <test-method signature="testGetTeacher(homework.ch11_13.p3.Course, homework.ch11_13.p3.Person)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testGetTeacher" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Course Name: Java Language Programming
+Teacher Info: name: James Gosling, age: 65, facultyId: 0, title: Professor, email: http://nighthacks.com/jag/bio/index.html
+Student List:
+Totally: 0 students.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[name: James Gosling, age: 65, facultyId: 0, title: Professor, email: http://nighthacks.com/jag/bio/index.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTeacher -->
+        <test-method signature="testGetNumberOfStudent(homework.ch11_13.p3.Course, int)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testGetNumberOfStudent" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Course Name: Java Language Programming
+Teacher Info: name: James Gosling, age: 65, facultyId: 0, title: Professor, email: http://nighthacks.com/jag/bio/index.html
+Student List:
+name: aaa, age: 20, studentId: 20170101, department: CS, classNo: CS1704
+name: bbb, age: 20, studentId: 20170102, department: CS, classNo: CS1705
+name: ccc, age: 20, studentId: 20170103, department: CS, classNo: CS1706
+Totally: 3 students.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNumberOfStudent -->
+        <test-method signature="testUnregister(homework.ch11_13.p3.Course, [Lhomework.ch11_13.p3.Person;)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testUnregister" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Course Name: Java Language Programming
+Teacher Info: name: James Gosling, age: 65, facultyId: 0, title: Professor, email: http://nighthacks.com/jag/bio/index.html
+Student List:
+name: aaa, age: 20, studentId: 20170101, department: CS, classNo: CS1704
+name: bbb, age: 20, studentId: 20170102, department: CS, classNo: CS1705
+name: ccc, age: 20, studentId: 20170103, department: CS, classNo: CS1706
+Totally: 3 students.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Person;@1a052a00]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.util.List homework.ch11_13.p3.Course.getStudents()']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.util.List homework.ch11_13.p3.Course.getStudents()'
+at homework.ch11_13.CourseTest.testUnregister(CourseTest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnregister -->
+        <test-method signature="testTestClone(homework.ch11_13.p3.Course, java.lang.Object)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testTestClone" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Course Name: Java Language Programming
+Teacher Info: name: James Gosling, age: 65, facultyId: 0, title: Professor, email: http://nighthacks.com/jag/bio/index.html
+Student List:
+name: aaa, age: 20, studentId: 20170101, department: CS, classNo: CS1704
+name: bbb, age: 20, studentId: 20170102, department: CS, classNo: CS1705
+name: ccc, age: 20, studentId: 20170103, department: CS, classNo: CS1706
+Totally: 3 students.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.util.List homework.ch11_13.p3.Course.getStudents()']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.util.List homework.ch11_13.p3.Course.getStudents()'
+at homework.ch11_13.CourseTest.testTestClone(CourseTest.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestClone -->
+        <test-method signature="testTestToString(homework.ch11_13.p3.Course, [Ljava.lang.String;)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testTestToString" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Course Name: C++ Language Programming
+Teacher Info: name: T1, age: 40, facultyId: 1, title: Professor, email: 123@qq.com
+Student List:
+name: ccc, age: 21, studentId: 20170103, department: CS1, classNo: CS1705
+name: ddd, age: 22, studentId: 20170104, department: CS2, classNo: CS1706
+Totally: 2 students.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7f9fcf7f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestToString -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Course;, boolean)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Course;@61009542]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Course;, boolean)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Course;@77e9807f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Course;, boolean)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Course;@448ff1a8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Course;, boolean)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Course;@44a664f2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Course;, boolean)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Course;@7f77e91b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+        <test-method signature="testTestEquals([Lhomework.ch11_13.p3.Course;, boolean)[pri:0, instance:homework.ch11_13.CourseTest@7e2d773b]" started-at="2021-04-20T12:35:50Z" name="testTestEquals" data-provider="courseDataProvider" finished-at="2021-04-20T12:35:50Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lhomework.ch11_13.p3.Course;@1a38c59b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestEquals -->
+      </class> <!-- homework.ch11_13.CourseTest -->
+    </test> <!-- D:/IdeaWorkspace/TestNGDemo/test/homework/ch11_13/CourseTest.java -->
+  </suite> <!-- All Test Suite (0) -->
+</testng-results>
