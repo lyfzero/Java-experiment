@@ -4,7 +4,8 @@ JAVA_HOME=/home/lyf/jdk/currentjdk
 #
 LIB_DIR=./lib
 #
-TO_BE_TEST_CLASSPATH=/home/lyf/Desktop/Java-experiment/homework/ch11_13/p3
+# TO_BE_TEST_CLASSPATH=/home/lyf/Desktop/Java-experiment/homework/ch11_13/p3
+
 #
 TEST_SUITE_CLASSPATH=./test
 #

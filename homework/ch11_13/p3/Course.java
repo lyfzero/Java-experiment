@@ -1,9 +1,10 @@
 package homework.ch11_13.p3;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Course implements Cloneable {
     private String courseName;    // 课程名称
-    private ArrayList<Person> students;// 选修课程的学生列表，保存在ArrayList里
+    private List<Person> students;// 选修课程的学生列表，保存在ArrayList里
     private Person teacher;       // 课程的授课老师
 
     public Course(String courseName, Person teacher) {  // 构造函数
@@ -21,7 +22,7 @@ public class Course implements Cloneable {
     public String getCourseName() { // 获取课程名称
         return this.courseName;
     }
-    public ArrayList<Person> getStudents() { // 获取课程的学生名单 
+    public List<Person> getStudents() { // 获取课程的学生名单 
         // 这个方法纯粹是为了测试课程对象的深拷贝 实际场景下不应该返回学生名单，破坏了封装性
         return this.students;
     }
@@ -40,9 +41,12 @@ public class Course implements Cloneable {
     @Override
     public Object clone() throws CloneNotSupportedException {  // Course的深拷贝克隆
         Course c = (Course)super.clone();
-        c.courseName = this.courseName;
+        c.courseName = new String(this.courseName);
         c.teacher = (Faculty)this.teacher.clone();
-        c.students = (ArrayList<Person>)this.students.clone();
+        c.students = new ArrayList<Person>();
+        for(Person s : this.students) {
+            c.students.add((Person)s.clone());
+        }
         return c;
     }
     @Override

@@ -20,7 +20,7 @@ public class Faculty extends Person implements Cloneable {
         this.email = email;
     }
     public int getFacultyId() { // 获取教工Id
-        return getFacultyId();
+        return this.facultyId;
     }
     public void setFacultyId(int facultyId) { // 设置教工Id
         this.facultyId = facultyId;
@@ -51,11 +51,23 @@ public class Faculty extends Person implements Cloneable {
             if(this.facultyId != o.facultyId) {
                 return false;
             }
-            if(!(this.title == null && o.title == null) && !(this.title.equals(o.title))) {
-                return false;
+            if(this.title == null) {
+                if(o.title != null) {
+                    return false;
+                }
+            } else {
+                if(!this.title.equals(o.title)) {
+                    return false;
+                }
             }
-            if(!(this.email == null && o.email == null) && !(this.email.equals(o.email))) {
-                return false;
+            if(this.email == null) {
+                if(o.email != null) {
+                    return false;
+                }
+            } else {
+                if(!this.email.equals(o.email)) {
+                    return false;
+                }
             }
             return true;
         }
@@ -65,8 +77,8 @@ public class Faculty extends Person implements Cloneable {
     public Object clone() throws CloneNotSupportedException { // Faculty的深拷贝克隆
         Faculty f = (Faculty)super.clone();
         f.facultyId = this.facultyId;
-        f.title = this.title;
-        f.email = this.email;
+        f.title = new String(this.title);
+        f.email = new String(this.email);
         return f;
     }
 }

@@ -5,7 +5,9 @@ public class Student extends Person implements Cloneable {
     private String department;  // 所在院系
     private String classNo;     // 所在班级
     public Student() { // 缺省构造函数
-
+        this.studentId = 0;
+        this.department = "";
+        this.classNo = "";
     }
     public Student(String name, 
                     int age, 
@@ -49,11 +51,23 @@ public class Student extends Person implements Cloneable {
             if(this.studentId != o.studentId) {
                 return false;
             }
-            if(!(this.department == null && o.department == null) && !(this.department.equals(o.department))) {
-                return false;
+            if(this.department == null) {
+                if(o.department != null) {
+                    return false;
+                }
+            } else {
+                if(!this.department.equals(o.department)) {
+                    return false;
+                }
             }
-            if(!(this.classNo == null && o.classNo == null) && !(this.classNo.equals(o.classNo))) {
-                return false;
+            if(this.classNo == null) {
+                if(o.classNo != null) {
+                    return false;
+                }
+            } else {
+                if(!this.classNo.equals(o.classNo)) {
+                    return false;
+                }
             }
             return true;
         }
@@ -62,8 +76,8 @@ public class Student extends Person implements Cloneable {
     @Override
     public Object clone() throws CloneNotSupportedException { // Student 的深拷贝克隆
         Student s = (Student)super.clone();
-        s.classNo = this.classNo;
-        s.department = this.department;
+        s.classNo = new String(this.classNo);
+        s.department = new String(this.department);
         s.studentId = this.studentId;
         return s;
     }

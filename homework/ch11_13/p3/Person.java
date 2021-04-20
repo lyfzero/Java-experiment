@@ -44,7 +44,7 @@ public class Person implements Cloneable {
     @Override
     public Object clone() throws CloneNotSupportedException{ // Person 的深拷贝克隆
         Person p = (Person)super.clone();
-        p.name = this.name;
+        p.name = new String(this.name);
         p.age = this.age;
         return p;
     }
