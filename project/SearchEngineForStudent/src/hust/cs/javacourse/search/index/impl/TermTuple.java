@@ -1,11 +1,13 @@
 package hust.cs.javacourse.search.index.impl;
 
+import hust.cs.javacourse.search.index.AbstractTermTuple;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * <pre>
- * TermTuple是所有TermTuple对象的实现类.
+ * TermTuple是AbstractTermTuple的实现类.
  *      一个TermTuple对象为三元组(单词，出现频率，出现的当前位置).
  *      当解析一个文档时，每解析到一个单词，应该产生一个三元组，其中freq始终为1(因为单词出现了一次).
  * </pre>
@@ -14,18 +16,11 @@ import java.util.List;
  */
 public class TermTuple extends AbstractTermTuple {
     /**
-     * 单词
+     * 缺省构造函数
      */
-    public Term term;
-    /**
-     * 出现次数，始终为1
-     */
-    public final int freq = 1;
-    /**
-     * 单词出现的当前位置
-     */
-    public int curPos ;
-
+    public TermTuple() {
+        super();
+    }
     /**
      * 判断二个三元组内容是否相同
      * @param obj ：要比较的另外一个三元组
@@ -33,7 +28,7 @@ public class TermTuple extends AbstractTermTuple {
      */
     @Override
     public boolean equals(Object obj) {
-
+        // TODO
     }
 
     /**
@@ -42,6 +37,6 @@ public class TermTuple extends AbstractTermTuple {
      */
     @Override
     public String toString() {
-        
+        // TODO
     }
 }

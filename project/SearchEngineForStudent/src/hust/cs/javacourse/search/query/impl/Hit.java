@@ -17,32 +17,10 @@ import java.util.TreeMap;
  */
 public class Hit extends AbstractHit implements Comparable<Hit>{
     /**
-     * 文档id
-     */
-    protected int docId;
-    /**
-     * 文档绝对路径
-     */
-    protected String docPath;
-    /**
-     * 文档原文内容，显示搜索结果时有用
-     */
-    protected String content;
-    /**
-     * 命中的单词和对应的Posting键值对，对计算文档得分有用，对于一个查询命中结果，一个term对应的是Posting而不是PostingList
-     */
-    protected Map<AbstractTerm, AbstractPosting> termPostingMapping = new TreeMap<AbstractTerm, AbstractPosting>();
-
-    /**
-     * 该命中文档的得分，文档的得分通过Sort接口计算.每个文档得分默认值为1.0
-     */
-    protected double score = 1.0;
-
-    /**
      * 默认构造函数
      */
     public Hit(){
-
+        super();
     }
 
     /**
@@ -51,9 +29,7 @@ public class Hit extends AbstractHit implements Comparable<Hit>{
      * @param docPath   : 文档绝对路径
      */
     public Hit(int docId, String docPath){
-        this.docId = docId;
-        this.docPath = docPath;
-        this.content = FileUtil.read(docPath);
+        super(docId, docPath);
     }
 
     /**
@@ -63,66 +39,70 @@ public class Hit extends AbstractHit implements Comparable<Hit>{
      * @param termPostingMapping ：命中的三元组列表
      */
     public Hit(int docId, String docPath, Map<AbstractTerm, AbstractPosting> termPostingMapping){
-        this.docId = docId;
-        this.docPath = docPath;
-        this.termPostingMapping.putAll(termPostingMapping);
-        this.content = FileUtil.read(docPath);
+        super(docId, docPath, termPostingMapping);
     }
 
     /**
      * 获得文档id
      * @return ： 文档id
      */
+    @Override
     public int getDocId() {
-
+        return this.docId;
     }
 
     /**
      * 获得文档绝对路径
      * @return ：文档绝对路径
      */
+    @Override
     public String getDocPath() {
-
+        return this.docPath;
     }
 
     /**
      * 获得文档内容
      * @return ： 文档内容
      */
+    @Override
     public String getContent() {
-
+        return this.content;
     }
 
     /**
      * 设置文档内容
      * @param content ：文档内容
      */
+    @Override
     public void setContent(String content) {
-
+        this.content = content;
     }
 
     /**
      * 获得文档得分
      * @return ： 文档得分
      */
+    @Override
     public double getScore() {
-
+        return this.score;
     }
 
     /**
      * 设置文档得分
      * @param score ：文档得分
      */
+    @Override
     public void setScore(double score) {
-
+        this.score = score;
     }
 
     /**
      * 获得命中的单词和对应的Posting键值对
      * @return ：命中的单词和对应的Posting键值对
      */
+    @Override
     public Map<AbstractTerm, AbstractPosting> getTermPostingMapping() {
-
+        return this.termPostingMapping;
     }
 
     /**
@@ -131,7 +111,7 @@ public class Hit extends AbstractHit implements Comparable<Hit>{
      */
     @Override
     public String toString() {
-
+        // TODO
     }
 
     /**
@@ -141,7 +121,7 @@ public class Hit extends AbstractHit implements Comparable<Hit>{
      */
     @Override
     public int compareTo(Hit o) {
-
+        return (int)(this.score - o.getScore());
     }
 
 

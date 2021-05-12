@@ -1,11 +1,14 @@
 package hust.cs.javacourse.search.index.impl;
 
+import hust.cs.javacourse.search.index.AbstractPosting;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 /**
  * <pre>
- * Posting是Posting对象的实现类.
+ * Posting是AbstractPosting对象的实现类.
  *      Posting对象代表倒排索引里每一项， 一个Posting对象包括:
  *          包含单词的文档id.
  *          单词在文档里出现的次数.
@@ -17,25 +20,12 @@ import java.util.List;
  *          FileSerializable：可序列化到文件或从文件反序列化
  *  </pre>
  */
-public class Posting extends AbstractPosting implements Comparable<AbstractPosting>, FileSerializable {
-    /**
-     * 包含单词的文档id
-     */
-    protected int docId;
-    /**
-     * 单词在文档里出现的次数
-     */
-    protected int freq;
-    /**
-     * 单词在文档里出现的位置列表（以单词为单位进行编号，如第1个单词，第2个单词，...), 单词可能在文档里出现多次，因此需要一个List来保存
-     */
-    protected List<Integer> positions = new ArrayList<>();
-
+public class Posting extends AbstractPosting implements Comparable<Posting>, FileSerializable {
     /**
      * 缺省构造函数
      */
-    public AbstractPosting(){
-
+    public Posting(){
+        super();
     }
 
     /**
@@ -44,10 +34,8 @@ public class Posting extends AbstractPosting implements Comparable<AbstractPosti
      * @param freq  ：单词在文档里出现的次数
      * @param positions   ：单词在文档里出现的位置
      */
-    public AbstractPosting(int docId, int freq, List<Integer> positions){
-        this.docId = docId;
-        this.freq = freq;
-        this.positions = positions;
+    public Posting(int docId, int freq, List<Integer> positions){
+        super(docId, freq, positions);
     }
 
     /**
@@ -57,7 +45,20 @@ public class Posting extends AbstractPosting implements Comparable<AbstractPosti
      */
     @Override
     public boolean equals(Object obj) {
-
+        if(obj instanceof Posting) {
+            Posting o = (Posting)obj;
+            if(this.docId != o.docId || this.freq != o.freq) {
+                return false;
+            }
+            if(this.positions.size() != o.positions.size()) {
+                return false;
+            }
+            if(!this.positions.containsAll(o.positions) || !o.positions.containsAll(this.positions)) {
+                return false;
+            }
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -66,55 +67,68 @@ public class Posting extends AbstractPosting implements Comparable<AbstractPosti
      */
     @Override
     public String toString() {
-
+        StringBuffer res = "";
+        res.append("Posting: \ndocId: " + this.docId + "\tfreq: " + this.freq).append("\t");
+        res.append("positions: ");
+        for(int pos: this.positions) {
+            res.append(pos + ", ");
+        }
+        return res.toString();
     }
 
     /**
      * 返回包含单词的文档id
      * @return ：文档id
      */
+    @Override
     public int getDocId() {
-
+        return this.docId;
     }
 
     /**
      * 设置包含单词的文档id
      * @param docId：包含单词的文档id
      */
+    @Override
     public void setDocId(int docId) {
-
+        this.docId = docId;
     }
 
     /**
      * 返回单词在文档里出现的次数
      * @return ：出现次数
      */
+    @Override
     public int getFreq() {
-
+        return this.freq;
     }
 
     /**
      * 设置单词在文档里出现的次数
      * @param freq:单词在文档里出现的次数
      */
+    @Override
     public void setFreq(int freq) {
-
+        this.freq = freq;
     }
 
     /**
      * 返回单词在文档里出现的位置列表
      * @return ：位置列表
      */
+    @Override
     public List<Integer> getPositions() {
-
+        return this.positions;
     }
 
     /**
      * 设置单词在文档里出现的位置列表
      * @param positions：单词在文档里出现的位置列表
      */
+    @Override
     public void setPositions(List<Integer> positions) {
-
+        this.positions = new ArrayList<Integer>();
+        this.positions.addAll(positions);
     }
 
     /**
@@ -123,14 +137,33 @@ public class Posting extends AbstractPosting implements Comparable<AbstractPosti
      * @return ：二个Posting对象的docId的差值
      */
     @Override
-    public int compareTo(AbstractPosting o) {
-
+    public int compareTo(Posting o) {
+        return this.docId - o.getDocId();
     }
 
     /**
      * 对内部positions从小到大排序
      */
+    @Override
     public void sort() {
+        Collections.sort(this.positions);
+    }
 
+    /**
+     * 
+     * @param in
+     */
+    @Override
+    public void readObject(ObjectInputStream in) {
+        // TODO
+    }
+
+    /**
+     * 
+     * @param out
+     */
+    @Override
+    public void writeObject(OBjectOutputStream out) {
+        // TODO
     }
 }

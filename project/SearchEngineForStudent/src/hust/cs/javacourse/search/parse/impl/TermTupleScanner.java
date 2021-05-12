@@ -13,14 +13,9 @@ import java.io.IOException;
  */
 public abstract class TermTupleScanner extends AbstractTermTupleStream {
     /**
-     * input作为输入流对象，读取文本文件得到一个个三元组TermTuple
-     */
-    protected BufferedReader input = null;
-
-    /**
      * 缺省构造函数
      */
-    public  TermTupleScanner(){
+    public TermTupleScanner(){
 
     }
 
@@ -28,20 +23,18 @@ public abstract class TermTupleScanner extends AbstractTermTupleStream {
      * 构造函数
      * @param input：指定输入流对象，应该关联到一个文本文件
      */
-    public  TermTupleScanner(BufferedReader input){
-        this.input = input;
+    public TermTupleScanner(BufferedReader input){
+        super(input);
     }
 
     /**
-     * 实现父类AbstractTermTupleStream的close方法，关闭流
+     * 
+     * @return
      */
     @Override
-    public void close(){
-        try {
-            input.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public AbstractTermTuple next() {
+        // TODO
     }
+
 
 }

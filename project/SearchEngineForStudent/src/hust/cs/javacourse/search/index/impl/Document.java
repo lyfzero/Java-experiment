@@ -1,11 +1,13 @@
 package hust.cs.javacourse.search.index.impl;
 
-import java.util.ArrayList;
+import hust.cs.javacourse.search.index.AbstractDocument;
+import hust.cs.javacourse.search.index.AbstractTermTuple;
+
 import java.util.List;
 
 /**
  *<pre>
- *     Document是文档对象的实现类.
+ *     Document是文档对象AbstractDocument的实现类.
  *          文档对象是解析一个文本文件得到结果，文档对象里面包含：
  *              文档id.
  *              文档的绝对路径.
@@ -13,19 +15,6 @@ import java.util.List;
  *</pre>
  */
 public class Document extends AbstractDocument {
-    /**
-     * 文档id
-     */
-    protected int docId;
-    /**
-     * 文档绝对路径
-     */
-    protected String docPath;
-    /**
-     * 文档包含的三元组列表
-     */
-    protected List<AbstractTermTuple> tuples = new ArrayList<AbstractTermTuple>();
-
     /**
      * 缺省构造函数
      */
@@ -39,71 +28,83 @@ public class Document extends AbstractDocument {
      * @param docPath：文档绝对路径
      */
     public Document(int docId, String docPath){
-        this.docId  = docId;
-        this.docPath = docPath;
+        super(docId, docPath);
     }
-
+    
+    /**
+     * 构造函数
+     * @param docId：文档id
+     * @param docPath：文档绝对路径
+     * @param tuples：文档包含的三元组的链表
+     */
     public Document(int docId, String docPath,List<AbstractTermTuple> tuples){
-        this.docId  = docId;
-        this.docPath = docPath;
-        this.tuples = tuples;
+        super(docId, docPath, tuples);
     }
 
     /**
      * 获得文档id
      * @return ：文档id
      */
+    @Override
     public int getDocId() {
-
+        return this.docId;
     }
 
     /**
      * 设置文档id
      * @param docId：文档id
      */
+    @Override
     public void setDocId(int docId) {
-        
+        this.docId = docId;
     }
 
     /**
      * 获得文档绝对路径
      * @return ：文档绝对路径
      */
+    @Override
     public String getDocPath() {
-
+        return this.docPath;
     }
 
     /**
      * 设置文档绝对路径
      * @param docPath：文档绝对路径
      */
+    @Override
     public void setDocPath(String docPath) {
-
+        this.docPath = new String(docPath);
     }
 
     /**
      * 获得文档包含的三元组列表
      * @return ：文档包含的三元组列表
      */
+    @Override
     public List<AbstractTermTuple> getTuples() {
-
+        return this.tuples;
     }
 
     /**
      * 向文档对象里添加三元组, 要求不能有内容重复的三元组
      * @param tuple ：要添加的三元组
      */
+    @Override
     public void addTuple(AbstractTermTuple tuple) {
-
+        if(!this.tuples.contains(tuple)) {
+            this.tuples.add(tuple);
+        }
     }
 
     /**
-     * 判断是否包含指定的三元组
+     * 判断文档是否包含指定的三元组
      * @param tuple ： 指定的三元组
      * @return ： 如果包含指定的三元组，返回true;否则返回false
      */
+    @Override
     public boolean contains(AbstractTermTuple tuple) {
-
+        return this.tuples.contains(tuple);
     }
 
     /**
@@ -111,16 +112,18 @@ public class Document extends AbstractDocument {
      * @param index：指定下标位置
      * @return：三元组
      */
+    @Override
     public AbstractTermTuple getTuple(int index) {
-
+        return this.tuples.get(index);
     }
 
     /**
      * 返回文档对象包含的三元组的个数
      * @return ：文档对象包含的三元组的个数
      */
+    @Override
     public int getTupleSize() {
-
+        return this.tuples.size();
     }
 
     /**
@@ -129,6 +132,14 @@ public class Document extends AbstractDocument {
      */
     @Override
     public String toString() {
+        // TODO
+        // StringBuffer res = "";
+        // res.append("Document : docId: " + this.docId + "\t, docPath: " + this.docPath).append("\n");
+        // for(AbstractTermTuple tuple: this.tuples) {
+        //     res.append(tuple.toString());
+        // }
+        // return res.toString();
+        return "docId: " + this.docId + "docPath: " + this.docPath + "tuples: " + this.tuples.toString();
 
     }
 

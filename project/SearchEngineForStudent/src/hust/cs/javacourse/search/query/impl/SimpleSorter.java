@@ -10,8 +10,9 @@ public class SimpleSorter implements Sort {
      * 对命中结果集合根据文档得分排序
      * @param hits ：命中结果集合
      */
+    @Override
     public void sort(List<AbstractHit> hits) {
-
+        Collections.sort(hits);
     }
 
     /**
@@ -25,7 +26,8 @@ public class SimpleSorter implements Sort {
      * @return ：命中文档的得分
      * </pre>
      */
+    @Override
     public double score(AbstractHit hit) {
-        
+        // TODO
     }
 }

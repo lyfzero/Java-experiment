@@ -3,22 +3,16 @@ package hust.cs.javacourse.search.index.impl;
 /**
  * <pre>
  * IndexBuilder是索引构造器的实现类
- *      需要实例化一个具体子类对象完成索引构造的工作
+ *      需要实例化一个具体对象完成索引构造的工作
  * </pre>
  */
 public class IndexBuilder extends AbstractIndexBuilder {
     /**
-     * 构建索引必须解析文档构建Document对象，因此包含AbstractDocumentBuilder的子类对象
+     * 构造函数
+     * @param docBuilder：文件构造器
      */
-    protected AbstractDocumentBuilder docBuilder;
-
-    /**
-     * docId计数器，每当解析一个文档并写入索引，计数器应该+1
-     */
-    protected int docId = 0;
-
     public IndexBuilder(AbstractDocumentBuilder docBuilder){
-        this.docBuilder = docBuilder;
+        super(docBuilder);
     }
 
     /**
@@ -30,7 +24,7 @@ public class IndexBuilder extends AbstractIndexBuilder {
      * </pre>
      */
     public AbstractIndex buildIndex(String rootDirectory) {
-        
+        // TODO
     }
 
 }

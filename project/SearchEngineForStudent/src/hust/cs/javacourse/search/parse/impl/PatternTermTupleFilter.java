@@ -13,23 +13,15 @@ package hust.cs.javacourse.search.parse.impl;
  */
 public class PatternTermTupleFilter extends AbstractTermTupleFilter {
     /**
-     * Filter的输入，类型为AbstractTermTupleStream
-     */
-    protected AbstractTermTupleStream input;
-
-    /**
      * 构造函数
      * @param input：Filter的输入，类型为AbstractTermTupleStream
      */
     public PatternTermTupleFilter(AbstractTermTupleStream input){
-        this.input = input;
+        super(input);
     }
 
-    /**
-     * 实现父类AbstractTermTupleStream的close方法，关闭流
-     */
     @Override
-    public void close(){
-        input.close();
+    public AbstractTermTuple next() throws IOException {
+        // TODO
     }
 }

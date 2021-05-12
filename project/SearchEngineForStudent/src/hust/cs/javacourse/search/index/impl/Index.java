@@ -10,7 +10,11 @@ import java.io.ObjectOutputStream;
 import java.util.Set;
 
 /**
- * AbstractIndex的具体实现类
+ * Index是AbstractIndex的具体实现类
+ *  一个倒排索引对象包含了一个文档集合的倒排索引
+ *  内存中的倒排索引结构为HashMap，eky为Term对象，value为对应的PostingList对象
+ *  另外在Index里还定义了从docId和docPath之间的映射关系
+ *  实现了FileSerializable接口：可序列化到文件或从文件反序列化
  */
 public class Index extends AbstractIndex {
     /**
@@ -20,6 +24,7 @@ public class Index extends AbstractIndex {
      */
     @Override
     public String toString() {
+        // TODO
         return null;
     }
 
@@ -30,7 +35,7 @@ public class Index extends AbstractIndex {
      */
     @Override
     public void addDocument(AbstractDocument document) {
-
+        // TODO
     }
 
     /**
@@ -41,7 +46,7 @@ public class Index extends AbstractIndex {
      */
     @Override
     public void load(File file) {
-
+        // TODO
     }
 
     /**
@@ -52,7 +57,7 @@ public class Index extends AbstractIndex {
      */
     @Override
     public void save(File file) {
-
+        // TODO
     }
 
     /**
@@ -63,6 +68,7 @@ public class Index extends AbstractIndex {
      */
     @Override
     public AbstractPostingList search(AbstractTerm term) {
+        // TODO
         return null;
     }
 
@@ -73,6 +79,7 @@ public class Index extends AbstractIndex {
      */
     @Override
     public Set<AbstractTerm> getDictionary() {
+        // TODO
         return null;
     }
 
@@ -86,7 +93,7 @@ public class Index extends AbstractIndex {
      */
     @Override
     public void optimize() {
-
+        // TODO
     }
 
     /**
@@ -97,6 +104,7 @@ public class Index extends AbstractIndex {
      */
     @Override
     public String getDocName(int docId) {
+        // TODO
         return null;
     }
 
@@ -107,7 +115,7 @@ public class Index extends AbstractIndex {
      */
     @Override
     public void writeObject(ObjectOutputStream out) {
-
+        // TODO
     }
 
     /**
@@ -117,6 +125,6 @@ public class Index extends AbstractIndex {
      */
     @Override
     public void readObject(ObjectInputStream in) {
-
+        // TODO
     }
 }

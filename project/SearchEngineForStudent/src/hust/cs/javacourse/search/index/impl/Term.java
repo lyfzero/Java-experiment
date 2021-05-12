@@ -1,35 +1,22 @@
-package hust.cs.javacourse.search.index.Term;
+package hust.cs.javacourse.search.index.impl;
+
+import hust.cs.javacourse.search.index.AbstractTerm;
 
 /**
  * <pre>
- * Term是Term对象的实现类.
+ * Term是AbstractTerm的实现类.
  *      Term对象表示文本文档里的一个单词.
  *      必须实现下面二个接口:
  *          Comparable：可比较大小（字典序）,为了加速检索过程，字典需要将单词进行排序.
  *          FileSerializable：可序列化到文件或从文件反序列化.
  *   </pre>
  */
-public class Term extends AbstractTerm implements Comparable<AbstractTerm>, FileSerializable{
-    /**
-     * Term内容
-     */
-    protected String content;
-
+public class Term extends AbstractTerm implements Comparable<Term>, FileSerializable{
     /**
      * 缺省构造函数
      */
     public Term(){
-
-    }
-
-    /**
-     * 因为要作为HashMap里面的key，因此必须要覆盖hashCode方法
-     * 返回对象的HashCode
-     * @return ：对象的HashCode
-     */
-    @Override
-    public int hashCode() {
-        return this.content.hashCode();
+        super();
     }
 
     /**
@@ -37,7 +24,7 @@ public class Term extends AbstractTerm implements Comparable<AbstractTerm>, File
      * @param content ：Term内容
      */
     public Term(String content){
-        this.content = content;
+        super(content);
     }
 
     /**
@@ -47,7 +34,20 @@ public class Term extends AbstractTerm implements Comparable<AbstractTerm>, File
      */
     @Override
     public boolean equals(Object obj) {
-
+        if(obj instanceof Term) {
+            Term o = (Term)obj;
+            if(this.content == NULL) {
+                if(o.content != NULL) {
+                    return false;
+                }
+            } else {
+                if(!this.content.equals(o.content)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -56,23 +56,25 @@ public class Term extends AbstractTerm implements Comparable<AbstractTerm>, File
      */
     @Override
     public String toString() {
-
+        return this.content;
     }
 
     /**
      * 返回Term内容
      * @return Term内容
      */
+    @Override
     public String getContent() {
-
+        return this.content;
     }
 
     /**
      * 设置Term内容
      * @param content：Term的内容
      */
+    @Override
     public void setContent(String content) {
-
+        this.content = new String(content);
     }
 
     /**
@@ -82,6 +84,24 @@ public class Term extends AbstractTerm implements Comparable<AbstractTerm>, File
      */
     @Override
     public int compareTo(AbstractTerm o) {
+        // TODO
+    }
 
+    /**
+     * 
+     * @param in
+     */
+    @Override
+    public void readObject(ObjectInputStream in) {
+        // TODO
+    }
+
+    /**
+     * 
+     * @param out
+     */
+    @Override
+    public void writeObject(ObjectOutputStream out) {
+        // TODO
     }
 }

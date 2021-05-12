@@ -17,7 +17,13 @@ public class TestSearchIndex {
      * @param args ：命令行参数
      */
     public static void main(String[] args){
-
-
+        Sort freqSorter = new SimpleSorter();
+        String indexFile = Config.INDEX_DIR + "index.dat";
+        AbstractIndexSearcher searcher = new IndexSearcher();
+        searcher.open(indexFile);
+        AbstractHit[] hits = searcher.search(new Term("coronavirus"), freqSorter);
+        for (AbstractHit hit : hits) {
+            System.out.println(hit);
+        }
     }
 }
