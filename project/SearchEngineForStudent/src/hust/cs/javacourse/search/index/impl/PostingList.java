@@ -7,7 +7,6 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-// TODO
 /**
  * <pre>
  * PostingList是AbstractPostingList的实现类.
