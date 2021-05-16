@@ -1,6 +1,12 @@
 package hust.cs.javacourse.search.parse.impl;
 
+import hust.cs.javacourse.search.index.AbstractTermTuple;
+import hust.cs.javacourse.search.parse.AbstractTermTupleFilter;
+import hust.cs.javacourse.search.parse.AbstractTermTupleStream;
+import hust.cs.javacourse.search.util.StopWords;
 
+import java.io.IOException;
+import java.util.Arrays;
 /**
  * <pre>
  * 抽象类AbstractTermTupleFilter类型是AbstractTermTupleStream的子类,里面包含另一个
@@ -16,8 +22,8 @@ public class StopWordTermTupleFilter extends AbstractTermTupleFilter{
      * 构造函数
      * @param input：Filter的输入，类型为AbstractTermTupleStream
      */
-    public AbstractTermTupleFilter(AbstractTermTupleStream input){
-        this.input = input;
+    public StopWordTermTupleFilter(AbstractTermTupleStream input){
+        super(input);
     }
 
     /**
@@ -26,7 +32,14 @@ public class StopWordTermTupleFilter extends AbstractTermTupleFilter{
      * @throws IOException
      */
     @Override
-    public AbstractTermTuple next() throws IOException {
-        // TODO
+    public AbstractTermTuple next() {
+        AbstractTermTuple termTuple = input.next();
+        if(termTuple==null)  return null; //到达输入尾
+        String[] stopWords = StopWords.STOP_WORDS;
+        while(Arrays.binarySearch(stopWords,termTuple.term.getContent())>=0){
+            termTuple = input.next();
+            if(termTuple==null)  return null;
+        }
+        return termTuple;
     }
 }

@@ -1,5 +1,11 @@
 package hust.cs.javacourse.search.index.impl;
 
+import hust.cs.javacourse.search.index.*;
+import hust.cs.javacourse.search.util.*;
+
+import java.io.*;
+import java.util.List;
+
 /**
  * <pre>
  * IndexBuilder是索引构造器的实现类
@@ -23,8 +29,17 @@ public class IndexBuilder extends AbstractIndexBuilder {
      * @return ：构建好的索引
      * </pre>
      */
+    @Override
     public AbstractIndex buildIndex(String rootDirectory) {
-        // TODO
+        Index index = new Index();
+        DocumentBuilder docBuilder = new DocumentBuilder();
+        List<String> files = FileUtil.list(rootDirectory); //从文件夹构建
+        for (String string : files) {
+            index.addDocument(docBuilder.build(docId, string, new File(string)));
+            docId++;
+        }
+        index.optimize();
+        return index;
     }
 
 }

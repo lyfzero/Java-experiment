@@ -2,9 +2,6 @@ package hust.cs.javacourse.search.index.impl;
 
 import hust.cs.javacourse.search.index.AbstractTermTuple;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * <pre>
  * TermTuple是AbstractTermTuple的实现类.
@@ -28,7 +25,12 @@ public class TermTuple extends AbstractTermTuple {
      */
     @Override
     public boolean equals(Object obj) {
-        // TODO
+        if(this == obj){
+            return true;
+        }
+        if(obj == null || getClass()!=obj.getClass()) return false;
+        TermTuple p = (TermTuple) obj;
+        return this.term.equals(p.term) && this.curPos == p.curPos;
     }
 
     /**
@@ -37,6 +39,7 @@ public class TermTuple extends AbstractTermTuple {
      */
     @Override
     public String toString() {
-        // TODO
+        return this.term.toString() + "frec: " + this.freq + "curPos: " + this.curPos;
+
     }
 }

@@ -1,6 +1,6 @@
 #!/bin/bash
 #设置JAVA_HOME
-JAVA_HOME=/home/guxiwu/jdk/currentjdk
+JAVA_HOME=/home/lyf/jdk/currentjdk
 
 #设置运行TestNG的依赖Jar包所在目录(当前目录的lib子目录)
 LIB_DIR=./lib
@@ -9,7 +9,7 @@ LIB_DIR=./lib
 TO_BE_TEST_CLASSPAH=./betest
 
 #设置测试类的目录,为当前目录的test子目录
-TEST_SUITE_CLASSPATH=./test
+TEST_SUITE_CLASSPATH=/home/lyf/Desktop/Java-experiment/project/bin
 
 #将运行TestNG的依赖Jar包放进CLASSPATH
 DEP_JAR=

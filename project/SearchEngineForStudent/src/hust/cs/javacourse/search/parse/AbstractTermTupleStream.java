@@ -1,7 +1,6 @@
 package hust.cs.javacourse.search.parse;
 
 import hust.cs.javacourse.search.index.AbstractTermTuple;
-
 /**
  * <pre>
  * AbstractTermTupleStream是各种TermFreqPosTupleStream对象的抽象父类

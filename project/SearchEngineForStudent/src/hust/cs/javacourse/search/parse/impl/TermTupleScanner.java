@@ -1,7 +1,16 @@
 package hust.cs.javacourse.search.parse.impl;
 
-import java.io.BufferedReader;
-import java.io.IOException;
+import hust.cs.javacourse.search.index.AbstractTerm;
+import hust.cs.javacourse.search.index.AbstractTermTuple;
+import hust.cs.javacourse.search.index.impl.Term;
+import hust.cs.javacourse.search.index.impl.TermTuple;
+import hust.cs.javacourse.search.parse.AbstractTermTupleScanner;
+import hust.cs.javacourse.search.util.StringSplitter;
+
+import java.io.*;
+import java.util.*;
+
+import static hust.cs.javacourse.search.util.Config.STRING_SPLITTER_REGEX;
 
 /**
  * <pre>
@@ -11,7 +20,9 @@ import java.io.IOException;
  *     其具体子类需要重新实现next方法获得文本文件里的三元组
  * </pre>
  */
-public abstract class TermTupleScanner extends AbstractTermTupleStream {
+public class TermTupleScanner extends AbstractTermTupleScanner {
+    protected Queue<AbstractTermTuple> termTuples = new LinkedList<>();
+
     /**
      * 缺省构造函数
      */
@@ -33,7 +44,31 @@ public abstract class TermTupleScanner extends AbstractTermTupleStream {
      */
     @Override
     public AbstractTermTuple next() {
-        // TODO
+        try{
+            String Line = input.readLine();
+            int pos = 0;
+            while(Line!=null){
+                Line = Line.trim();        //删除首尾字符
+                Line = Line.toLowerCase(); //转小写
+                StringSplitter splitter = new StringSplitter();
+                splitter.setSplitRegex(STRING_SPLITTER_REGEX);
+                List<String> words = splitter.splitByRegex(Line); //完成划分后的多个单词
+                for(String word:words){
+                    AbstractTermTuple termTuple = new TermTuple();
+                    AbstractTerm term = new Term();
+                    term.setContent(word);
+                    termTuple.term = term;
+                    termTuple.curPos = pos++;
+                    termTuples.add(termTuple);
+                }
+                Line = input.readLine();
+            }
+            if(termTuples.isEmpty()) return null;
+            else return termTuples.poll();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 

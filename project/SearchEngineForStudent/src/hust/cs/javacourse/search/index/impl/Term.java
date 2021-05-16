@@ -2,6 +2,8 @@ package hust.cs.javacourse.search.index.impl;
 
 import hust.cs.javacourse.search.index.AbstractTerm;
 
+import java.io.*;
+import java.util.List;
 /**
  * <pre>
  * Term是AbstractTerm的实现类.
@@ -11,7 +13,7 @@ import hust.cs.javacourse.search.index.AbstractTerm;
  *          FileSerializable：可序列化到文件或从文件反序列化.
  *   </pre>
  */
-public class Term extends AbstractTerm implements Comparable<Term>, FileSerializable{
+public class Term extends AbstractTerm {
     /**
      * 缺省构造函数
      */
@@ -34,20 +36,12 @@ public class Term extends AbstractTerm implements Comparable<Term>, FileSerializ
      */
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof Term) {
-            Term o = (Term)obj;
-            if(this.content == NULL) {
-                if(o.content != NULL) {
-                    return false;
-                }
-            } else {
-                if(!this.content.equals(o.content)) {
-                    return false;
-                }
-            }
+        if(this == obj){
             return true;
         }
-        return false;
+        if(obj == null || getClass()!=obj.getClass()) return false;
+        Term p = (Term) obj;
+        return this.content.equals(p.getContent());
     }
 
     /**
@@ -84,7 +78,7 @@ public class Term extends AbstractTerm implements Comparable<Term>, FileSerializ
      */
     @Override
     public int compareTo(AbstractTerm o) {
-        // TODO
+        return this.content.compareTo(o.getContent());
     }
 
     /**
@@ -93,7 +87,11 @@ public class Term extends AbstractTerm implements Comparable<Term>, FileSerializ
      */
     @Override
     public void readObject(ObjectInputStream in) {
-        // TODO
+        try {
+            this.setContent((String) (in.readObject()));
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -102,6 +100,10 @@ public class Term extends AbstractTerm implements Comparable<Term>, FileSerializ
      */
     @Override
     public void writeObject(ObjectOutputStream out) {
-        // TODO
+        try{
+            out.writeObject(this.content);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -3,9 +3,13 @@ package hust.cs.javacourse.search.run;
 import hust.cs.javacourse.search.index.AbstractDocumentBuilder;
 import hust.cs.javacourse.search.index.AbstractIndex;
 import hust.cs.javacourse.search.index.AbstractIndexBuilder;
+import hust.cs.javacourse.search.index.impl.DocumentBuilder;
+import hust.cs.javacourse.search.index.impl.Index;
+import hust.cs.javacourse.search.index.impl.IndexBuilder;
 import hust.cs.javacourse.search.util.Config;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 
 /**
  * 测试索引构建

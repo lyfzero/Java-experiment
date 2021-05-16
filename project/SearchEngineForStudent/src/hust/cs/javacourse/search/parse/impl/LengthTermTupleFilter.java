@@ -1,5 +1,11 @@
 package hust.cs.javacourse.search.parse.impl;
 
+import hust.cs.javacourse.search.index.AbstractTermTuple;
+import hust.cs.javacourse.search.parse.AbstractTermTupleFilter;
+import hust.cs.javacourse.search.parse.AbstractTermTupleStream;
+import hust.cs.javacourse.search.util.Config;
+
+import java.io.IOException;
 
 /**
  * <pre>
@@ -11,7 +17,7 @@ package hust.cs.javacourse.search.parse.impl;
  * 完成不同的过滤功能，多个过滤器可以形成过滤管道.
  * </pre>
  */
-public class LengthTermTupleFilter extends AbstractTermTupleFilter{
+public class LengthTermTupleFilter extends AbstractTermTupleFilter {
     /**
      * 构造函数
      * @param input：Filter的输入，类型为AbstractTermTupleStream
@@ -24,7 +30,17 @@ public class LengthTermTupleFilter extends AbstractTermTupleFilter{
      * 过滤掉过长或者过短的单词
      */
     @Override
-    public AbstractTermTuple next() throws IOException {
-        // TODO
+    public AbstractTermTuple next() {
+        AbstractTermTuple curTermTuple= input.next();
+        if(curTermTuple==null)  
+            return null;
+        int length = curTermTuple.term.getContent().length();
+        while(length< Config.TERM_FILTER_MINLENGTH||length>Config.TERM_FILTER_MAXLENGTH){
+            curTermTuple = input.next();
+            if(curTermTuple==null)  
+                return null;
+            length = curTermTuple.term.getContent().length();
+        }
+        return curTermTuple;
     }
 }

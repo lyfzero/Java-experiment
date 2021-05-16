@@ -2,9 +2,8 @@ package hust.cs.javacourse.search.index.impl;
 
 import hust.cs.javacourse.search.index.AbstractPosting;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Collections;
+import java.io.*;
+import java.util.*;
 
 /**
  * <pre>
@@ -20,7 +19,7 @@ import java.util.Collections;
  *          FileSerializable：可序列化到文件或从文件反序列化
  *  </pre>
  */
-public class Posting extends AbstractPosting implements Comparable<Posting>, FileSerializable {
+public class Posting extends AbstractPosting {
     /**
      * 缺省构造函数
      */
@@ -67,13 +66,8 @@ public class Posting extends AbstractPosting implements Comparable<Posting>, Fil
      */
     @Override
     public String toString() {
-        StringBuffer res = "";
-        res.append("Posting: \ndocId: " + this.docId + "\tfreq: " + this.freq).append("\t");
-        res.append("positions: ");
-        for(int pos: this.positions) {
-            res.append(pos + ", ");
-        }
-        return res.toString();
+        return "docId: " + this.docId + "freq: " + this.freq +
+                "\nPositions: " + this.positions.toString();
     }
 
     /**
@@ -137,7 +131,7 @@ public class Posting extends AbstractPosting implements Comparable<Posting>, Fil
      * @return ：二个Posting对象的docId的差值
      */
     @Override
-    public int compareTo(Posting o) {
+    public int compareTo(AbstractPosting o) {
         return this.docId - o.getDocId();
     }
 
@@ -155,7 +149,15 @@ public class Posting extends AbstractPosting implements Comparable<Posting>, Fil
      */
     @Override
     public void readObject(ObjectInputStream in) {
-        // TODO
+        try {
+            this.docId = (Integer) in.readObject();
+            this.freq = (Integer) in.readObject();
+            Integer size = (Integer) in.readObject();
+            for (int i = 0; i < size; i++)
+                this.positions.add((Integer) in.readObject());
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -163,7 +165,15 @@ public class Posting extends AbstractPosting implements Comparable<Posting>, Fil
      * @param out
      */
     @Override
-    public void writeObject(OBjectOutputStream out) {
-        // TODO
+    public void writeObject(ObjectOutputStream out) {
+        try{
+            out.writeObject(this.docId);
+            out.writeObject(this.freq);
+            out.writeObject(this.positions.size());
+            for (Integer i : this.positions)
+                out.writeObject(i);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

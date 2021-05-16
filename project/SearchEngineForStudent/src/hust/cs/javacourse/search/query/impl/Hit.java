@@ -2,12 +2,9 @@ package hust.cs.javacourse.search.query.impl;
 
 import hust.cs.javacourse.search.index.AbstractPosting;
 import hust.cs.javacourse.search.index.AbstractTerm;
-import hust.cs.javacourse.search.index.AbstractTermTuple;
-import hust.cs.javacourse.search.util.FileUtil;
+import hust.cs.javacourse.search.query.AbstractHit;
 
-import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * <pre>
@@ -15,7 +12,7 @@ import java.util.TreeMap;
  * 实现该接口是因为需要必须比较大小，用于命中结果的排序.
  * </pre>
  */
-public class Hit extends AbstractHit implements Comparable<Hit>{
+public class Hit extends AbstractHit {
     /**
      * 默认构造函数
      */
@@ -111,7 +108,8 @@ public class Hit extends AbstractHit implements Comparable<Hit>{
      */
     @Override
     public String toString() {
-        // TODO
+        return "Hit!:\n"+"DocId:"+this.docId+" DocPath:"+this.docPath+" Content:"+
+            this.content+" Score:"+this.score+"\n"+this.termPostingMapping.toString();
     }
 
     /**
@@ -120,7 +118,7 @@ public class Hit extends AbstractHit implements Comparable<Hit>{
      * @return      ：二个命中结果得分的差值
      */
     @Override
-    public int compareTo(Hit o) {
+    public int compareTo(AbstractHit o) {
         return (int)(this.score - o.getScore());
     }
 

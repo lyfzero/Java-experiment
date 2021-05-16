@@ -1,11 +1,10 @@
 package hust.cs.javacourse.search.index.impl;
 
+import hust.cs.javacourse.search.index.AbstractPosting;
 import hust.cs.javacourse.search.index.AbstractPostingList;
 
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.*;
+import java.util.*;
 
 /**
  * <pre>
@@ -15,14 +14,16 @@ import java.util.List;
  *          FileSerializable：可序列化到文件或从文件反序列化.
  * </pre>
  */
-public class PostingList extends AbstractPostingList implements FileSerializable{
+public class PostingList extends AbstractPostingList {
     /**
      * 添加Posting,要求不能有内容重复的posting
      * @param posting：Posting对象
      */
     @Override
     public void add(AbstractPosting posting) {
-        // TODO
+        if(!this.list.contains(posting)){
+            this.list.add(posting);
+        }
     }
 
     /**
@@ -31,7 +32,11 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public String toString() {
-        // TODO
+        String re = "";
+        for(AbstractPosting a:this.list){
+            re = re + a.toString() + " ";
+        }
+        return re;
     }
 
     /**
@@ -40,7 +45,17 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public void add(List<AbstractPosting> postings) {
-        // TODO
+        for (AbstractPosting a1 : postings) {
+            boolean id = true;
+            for(AbstractPosting a2:list){
+                if(a2.equals(a1)){
+                    id = false;
+                }
+            }
+            if(id){
+                list.add(a1);
+            }
+        }
     }
 
     /**
@@ -50,7 +65,7 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public AbstractPosting get(int index) {
-        // TODO
+        return this.list.get(index);
     }
 
     /**
@@ -60,7 +75,7 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public int indexOf(AbstractPosting posting) {
-        // TODO
+        return this.list.indexOf(posting);
     }
 
     /**
@@ -70,7 +85,14 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public int indexOf(int docId) {
-        // TODO
+        int i=0;
+        for(AbstractPosting a:this.list){
+            if(a.getDocId()==docId){
+                return i;
+            }
+            i++;
+        }
+        return -1;
     }
 
     /**
@@ -80,7 +102,7 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public boolean contains(AbstractPosting posting) {
-        // TODO
+        return this.list.contains(posting);
     }
 
     /**
@@ -89,7 +111,7 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public void remove(int index) {
-        // TODO
+        this.list.remove(index);
     }
 
     /**
@@ -98,7 +120,7 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public void remove(AbstractPosting posting) {
-        // TODO
+        this.list.remove(posting);
     }
 
     /**
@@ -115,7 +137,7 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public void clear() {
-        // TODO
+        this.list.clear();
     }
 
     /**
@@ -124,7 +146,7 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public boolean isEmpty() {
-        // TODO
+        return this.list.isEmpty();
     }
 
     /**
@@ -132,7 +154,7 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public void sort() {
-        // TODO
+        this.list.sort(Comparator.naturalOrder());
     }
 
     /**
@@ -141,7 +163,11 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public void writeObject(ObjectOutputStream out) {
-        // TODO
+        try{
+            out.writeObject(this.list);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -150,6 +176,12 @@ public class PostingList extends AbstractPostingList implements FileSerializable
      */
     @Override
     public void readObject(ObjectInputStream in) {
-        // TODO
+        try {
+            this.list = new ArrayList<AbstractPosting>((List<AbstractPosting>) (in.readObject()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
