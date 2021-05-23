@@ -5,7 +5,6 @@ import hust.cs.javacourse.search.parse.AbstractTermTupleFilter;
 import hust.cs.javacourse.search.parse.AbstractTermTupleStream;
 import hust.cs.javacourse.search.util.Config;
 
-import java.io.IOException;
 /**
  * <pre>
  * 抽象类AbstractTermTupleFilter类型是AbstractTermTupleStream的子类,里面包含另一个
@@ -31,12 +30,16 @@ public class PatternTermTupleFilter extends AbstractTermTupleFilter {
     @Override
     public AbstractTermTuple next() {
         AbstractTermTuple termTuple = input.next();
-        if(termTuple==null)  return null;
+        if(termTuple==null) {
+            return null;
+        }
         String pattern = Config.TERM_FILTER_PATTERN;
         String content = termTuple.term.getContent();
-        while(!content.matches(pattern)){
+        while(!content.matches(pattern)) {
             termTuple = input.next();
-            if(termTuple==null)  return null;
+            if(termTuple==null) {
+                return null;
+            } 
             content = termTuple.term.getContent();
         }
         return termTuple;

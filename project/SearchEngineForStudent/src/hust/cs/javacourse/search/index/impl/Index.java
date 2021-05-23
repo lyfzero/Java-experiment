@@ -22,10 +22,8 @@ public class Index extends AbstractIndex {
     public String toString() {
         StringBuffer curString = new StringBuffer();
         for (AbstractTerm termList : termToPostingListMapping.keySet()) {
-            curString.append(termList.toString());
-            curString.append(":");
-            curString.append(termToPostingListMapping.get(termList).toString());
-            curString.append("\n");
+            curString.append(termList.toString()).append(":");
+            curString.append(termToPostingListMapping.get(termList).toString()).append("\n");
         }
         return curString.toString();
     }
@@ -43,7 +41,6 @@ public class Index extends AbstractIndex {
             Term curTerm = (Term) a.term;
             PostingList curPList = new PostingList();
             if (termToPostingListMapping.containsKey(curTerm)) {
-                //判断在倒挂索引中是否已存在该term
                 curPList = (PostingList) termToPostingListMapping.get(curTerm);
             }
             Posting curPosting = new Posting();
@@ -74,7 +71,8 @@ public class Index extends AbstractIndex {
     public void load(File file) {
         try {
             readObject(new ObjectInputStream(new FileInputStream(file)));
-        } catch (IOException ex) {
+        } 
+        catch (IOException ex) {
             ex.printStackTrace();
         }
     }
@@ -89,7 +87,8 @@ public class Index extends AbstractIndex {
     public void save(File file) {
         try {
             writeObject(new ObjectOutputStream(new FileOutputStream(file)));
-        } catch (IOException ex) {
+        } 
+        catch (IOException ex) {
             ex.printStackTrace();
         }
     }
@@ -162,7 +161,8 @@ public class Index extends AbstractIndex {
                 out.writeObject(docId);
                 out.writeObject(docIdToDocPathMapping.get(docId));
             }
-        } catch (IOException e) {
+        } 
+        catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -189,7 +189,8 @@ public class Index extends AbstractIndex {
                 String curDocPath = (String) in.readObject();
                 this.docIdToDocPathMapping.put(curDocId, curDocPath);
             }
-        } catch (IOException | ClassNotFoundException e) {
+        } 
+        catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }

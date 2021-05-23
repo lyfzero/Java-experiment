@@ -25,10 +25,12 @@ public class TermTuple extends AbstractTermTuple {
      */
     @Override
     public boolean equals(Object obj) {
-        if(this == obj){
+        if(this == obj) {
             return true;
         }
-        if(obj == null || getClass()!=obj.getClass()) return false;
+        if(obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
         TermTuple p = (TermTuple) obj;
         return this.term.equals(p.term) && this.curPos == p.curPos;
     }

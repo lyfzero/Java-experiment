@@ -47,13 +47,14 @@ public class TermTupleScanner extends AbstractTermTupleScanner {
         try{
             String Line = input.readLine();
             int pos = 0;
-            while(Line!=null){
-                Line = Line.trim();        //删除首尾字符
-                Line = Line.toLowerCase(); //转小写
+            while(Line != null){
+                Line = Line.trim();        
+                Line = Line.toLowerCase(); 
                 StringSplitter splitter = new StringSplitter();
                 splitter.setSplitRegex(STRING_SPLITTER_REGEX);
-                List<String> words = splitter.splitByRegex(Line); //完成划分后的多个单词
-                for(String word:words){
+                List<String> words = splitter.splitByRegex(Line);
+                
+                for(String word :words) {
                     AbstractTermTuple termTuple = new TermTuple();
                     AbstractTerm term = new Term();
                     term.setContent(word);
@@ -63,9 +64,14 @@ public class TermTupleScanner extends AbstractTermTupleScanner {
                 }
                 Line = input.readLine();
             }
-            if(termTuples.isEmpty()) return null;
-            else return termTuples.poll();
-        } catch (IOException e) {
+            if(termTuples.isEmpty()) {
+                return null;
+            }
+            else {
+                return termTuples.poll();
+            }
+        } 
+        catch (IOException e) {
             e.printStackTrace();
         }
         return null;

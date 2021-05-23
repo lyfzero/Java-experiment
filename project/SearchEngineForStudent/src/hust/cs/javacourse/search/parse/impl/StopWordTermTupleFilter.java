@@ -34,11 +34,15 @@ public class StopWordTermTupleFilter extends AbstractTermTupleFilter{
     @Override
     public AbstractTermTuple next() {
         AbstractTermTuple termTuple = input.next();
-        if(termTuple==null)  return null; //到达输入尾
+        if(termTuple==null) {
+            return null; 
+        } 
         String[] stopWords = StopWords.STOP_WORDS;
-        while(Arrays.binarySearch(stopWords,termTuple.term.getContent())>=0){
+        while(Arrays.binarySearch(stopWords, termTuple.term.getContent()) >= 0) {
             termTuple = input.next();
-            if(termTuple==null)  return null;
+            if(termTuple==null)  {
+                return null;
+            }
         }
         return termTuple;
     }

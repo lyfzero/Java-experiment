@@ -1,13 +1,8 @@
 package hust.cs.javacourse.search.index.impl;
 
-import hust.cs.javacourse.search.index.AbstractDocument;
-import hust.cs.javacourse.search.index.AbstractDocumentBuilder;
-import hust.cs.javacourse.search.index.AbstractTermTuple;
+import hust.cs.javacourse.search.index.*;
 import hust.cs.javacourse.search.parse.AbstractTermTupleStream;
-import hust.cs.javacourse.search.parse.impl.LengthTermTupleFilter;
-import hust.cs.javacourse.search.parse.impl.PatternTermTupleFilter;
-import hust.cs.javacourse.search.parse.impl.StopWordTermTupleFilter;
-import hust.cs.javacourse.search.parse.impl.TermTupleScanner;
+import hust.cs.javacourse.search.parse.impl.*;
 
 import java.io.*;
 
@@ -32,7 +27,7 @@ public class DocumentBuilder extends AbstractDocumentBuilder {
     public AbstractDocument build(int docId, String docPath, AbstractTermTupleStream termTupleStream) {
         Document item = new Document(docId, docPath);
         AbstractTermTuple tuple = (AbstractTermTuple) termTupleStream.next();
-        while(tuple!=null){
+        while(tuple!=null) {
             item.addTuple(tuple);
             tuple = termTupleStream.next();
         }
@@ -60,10 +55,14 @@ public class DocumentBuilder extends AbstractDocumentBuilder {
             abstractTermTupleStream = new LengthTermTupleFilter(abstractTermTupleStream);
             abstractTermTupleStream = new StopWordTermTupleFilter(abstractTermTupleStream);
             abstractDocument = this.build(docId, docPath, abstractTermTupleStream);
-        } catch (IOException e) {
+        } 
+        catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            if (abstractTermTupleStream != null) abstractTermTupleStream.close();
+        } 
+        finally {
+            if (abstractTermTupleStream != null) {
+                abstractTermTupleStream.close();
+            }
         }
         return abstractDocument;
     }
